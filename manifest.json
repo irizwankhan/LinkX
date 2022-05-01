@@ -1,14 +1,14 @@
 {
-  "name": "PanX",
-  "description": "Extension to open a panel on any page in chrome",
+  "name": "LinkX",
+  "description": "Powerful extension to show all anchor links on the page and emails.",
   "version": "1.0",
   "manifest_version": 3,
   "action": {},
   "icons": {
-    "16": "/images/panX-16.png",
-    "32": "/images/panX-32.png",
-    "48": "/images/panX-48.png",
-    "128": "/images/panX-128.png"
+    "16": "/images/linkX-16.png",
+    "32": "/images/linkX-32.png",
+    "48": "/images/linkX-48.png",
+    "128": "/images/linkX-128.png"
   },
   "background": {
     "service_worker": "background.js"
@@ -16,7 +16,7 @@
   "content_scripts": [
     {
       "matches": ["https://*/*"],
-      "js": ["panX.js"]
+      "js": ["panX.js", "linkX.js"]
     }
   ],
   "web_accessible_resources": [
@@ -29,8 +29,8 @@
   "commands": {
     "_execute_action": {
       "suggested_key": {
-        "default": "Alt+Shift+E",
-        "mac": "Alt+Shift+E"
+        "default": "Alt+Shift+L",
+        "mac": "Alt+Shift+L"
       },
       "description": "Opens panel"
     }

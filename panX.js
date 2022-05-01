@@ -1,4 +1,4 @@
-let numPanelWidth = 440; // update to change panel width
+let numPanelWidth = 640; // update to change panel width
 let panelOffset = 16; // update to change panel margin from body, 2X body.margin in css
 let panelWidth = `${numPanelWidth}px`;
 let panelVisibility = "hidden"; // update to change panel visibility on load
@@ -21,6 +21,9 @@ addEventListener("message", function (ev) {
   }
   if (ev.data == "removePanel") {
     remove();
+  }
+  if (ev.data == "rerun") {
+    executeLinkX();
   }
 });
 let iframe = document.createElement("iframe");

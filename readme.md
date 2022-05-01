@@ -1,12 +1,12 @@
-# PanX
+# LinkX
 
-A chrome extension boilerplate to inject an iframe panel to a webpage
+Powerful extension to show all anchor links on the page and emails.
 
-![panX](images/panX.png)
+![LinkX](images/LinkX.png)
 
 ## Setup
 
-- Clone the repo or [download](https://github.com/rizz-wan/PanX/archive/refs/heads/master.zip) the .zip and extract it.
+- Clone the repo or [download](https://github.com/rizz-wan/LinkX/archive/refs/heads/master.zip) the .zip and extract it.
 
 - Navigate to `chrome://extensions` in Google Chrome.
 
@@ -18,7 +18,9 @@ A chrome extension boilerplate to inject an iframe panel to a webpage
 
 ## Appendix
 
-- Default shortcut to launch the extension is set to `alt+shift+E`.
+- Default shortcut to launch the extension is set to `alt+shift+L`.
+
+- If the webpage is taking time to completely load and hence the panel contents, try hitting `Run on current state` button which will parse the `current state` of the webpage for links and emails
 
 - The Panel features three buttons on top right corner, viz,
 
@@ -30,9 +32,9 @@ A chrome extension boilerplate to inject an iframe panel to a webpage
 
 ## Feedback & Contribution
 
-- If you find any bugs or issues please report them on the [Issue Tracker](https://github.com/rizz-wan/panX/issues).
+- If you find any bugs or issues please report them on the [Issue Tracker](https://github.com/rizz-wan/LinkX/issues).
 
-> If you would like to contribute to this project please consider [forking this repo](https://github.com/rizz-wan/panX/fork), making your changes and then creating a new [Pull Request](https://github.com/rizz-wan/panX/pulls) back to the main code repository.
+> If you would like to contribute to this project please consider [forking this repo](https://github.com/rizz-wan/LinkX/fork), making your changes and then creating a new [Pull Request](https://github.com/rizz-wan/LinkX/pulls) back to the main code repository.
 
 ## License
 

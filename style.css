@@ -43,3 +43,60 @@ hr {
   padding: 8px 8px 0;
 }
 /* Engine ends*/
+
+.btn-light {
+  max-width: 100%;
+  border: 2px solid rgba(100, 100, 100, 0.5) !important;
+}
+#externalLinks .btn-light:after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}
+.panX,
+.accordion-button {
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+.accordion-item,
+.accordion-button {
+  background-color: transparent;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.copyX {
+  background-image: url(images/copy.svg);
+  display: inherit;
+  width: 16px;
+  margin-right: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-duration: 0.25s;
+}
+.linX:hover {
+  text-decoration: underline;
+}
+.c1 {
+  background-color: rgba(244, 239, 236, 0.25);
+}
+.c2 {
+  background-color: rgba(244, 224, 233, 0.25);
+}
+.c3 {
+  background-color: rgba(244, 217, 208, 0.25);
+}
+.c4 {
+  background-color: rgba(244, 227, 201, 0.25);
+}
+.c5 {
+  background-color: rgba(181, 220, 225, 0.25);
+}
+.c6 {
+  background-color: rgba(214, 205, 200, 0.25);
+}
+.c7 {
+  background-color: rgba(207, 218, 240, 0.25);
+}
