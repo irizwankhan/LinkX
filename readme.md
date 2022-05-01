@@ -1,6 +1,6 @@
 # LinkX
 
-Powerful extension to show all anchor links on the page and emails.
+Powerful extension to show all anchor links and emails on the page.
 
 ![LinkX](images/LinkX.png)
 
