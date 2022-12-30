@@ -131,9 +131,9 @@ document.addEventListener("click", function (e) {
         : e.target.nextSibling.textContent;
     navigator.clipboard.writeText(href).then(
       function () {
-        e.target.style.backgroundImage = "url('images/tick.svg')";
+        e.target.style.backgroundImage = "url('../images/tick.svg')";
         setTimeout(function () {
-          e.target.style.backgroundImage = "url('images/copy.svg')";
+          e.target.style.backgroundImage = "url('../images/copy.svg')";
         }, 1000);
       },
       function (err) {

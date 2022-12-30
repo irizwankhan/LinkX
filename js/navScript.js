@@ -1,3 +1,11 @@
+/*!
+ * PanX, A chrome extension boilerplate to inject an iframe panel to a webpage.
+ *
+ * @author Rizwan Khan <https://www.irizwan.com>
+ *
+ * @license  MIT
+ */
+
 let panXHeader = document.getElementById("panX-header");
 let minButton = document.getElementById("minButton");
 let restoreButton = document.getElementById("restoreButton");
@@ -26,13 +34,13 @@ closeButton.addEventListener("click", async () => {
   });
 });
 function closePanel() {
-  parent.postMessage("closePanel", "*");
+  parent.postMessage("closeLinkXPanel", "*");
 }
 function restorePanel() {
-  parent.postMessage("restorePanel", "*");
+  parent.postMessage("restoreLinkXPanel", "*");
 }
 function removePanel() {
-  parent.postMessage("removePanel", "*");
+  parent.postMessage("removeLinkXPanel", "*");
 }
 window.addEventListener("scroll", () => {
   const [r, g, b] = [255, 255, 255];

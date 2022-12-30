@@ -1,6 +1,6 @@
 {
   "name": "LinkX",
-  "description": "Powerful extension to show all anchor links on the page and emails.",
+  "description": "Powerful extension to show all anchor links and emails on the page",
   "version": "1.0",
   "manifest_version": 3,
   "action": {},
@@ -16,16 +16,16 @@
   "content_scripts": [
     {
       "matches": ["https://*/*"],
-      "js": ["panX.js", "linkX.js"]
+      "js": ["js/panX.js", "js/linkx/linkX.js"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["panelContent.html"],
+      "resources": ["templates/panelContent.html"],
       "matches": ["https://*/*"]
     }
   ],
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["contextMenus", "activeTab", "scripting"],
   "commands": {
     "_execute_action": {
       "suggested_key": {

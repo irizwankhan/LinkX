@@ -1,3 +1,11 @@
+/*!
+ * PanX, A chrome extension boilerplate to inject an iframe panel to a webpage.
+ *
+ * @author Rizwan Khan <https://www.irizwan.com>
+ *
+ * @license  MIT
+ */
+
 let numPanelWidth = 640; // update to change panel width
 let panelOffset = 16; // update to change panel margin from body, 2X body.margin in css
 let panelWidth = `${numPanelWidth}px`;
@@ -8,18 +16,18 @@ let hasPanel = true;
 const windowWidth = window.innerWidth;
 let shouldRestore = windowWidth > numPanelWidth + panelOffset ? true : false;
 chrome.runtime.onMessage.addListener((msg, sender) => {
-  if (msg == "togglePanel") {
+  if (msg == "toggleLinkXPanel") {
     hasPanel && toggle();
   }
 });
 addEventListener("message", function (ev) {
-  if (ev.data == "closePanel") {
+  if (ev.data == "closeLinkXPanel") {
     toggle();
   }
-  if (ev.data == "restorePanel") {
+  if (ev.data == "restoreLinkXPanel") {
     shouldRestore && restore();
   }
-  if (ev.data == "removePanel") {
+  if (ev.data == "removeLinkXPanel") {
     remove();
   }
   if (ev.data == "rerun") {
@@ -27,7 +35,7 @@ addEventListener("message", function (ev) {
   }
 });
 let iframe = document.createElement("iframe");
-iframe.style.background = "rgba(255,255,255,0)";
+iframe.style.background = "rgba(255,255,255,0.45)";
 iframe.style.backdropFilter = "saturate(200%) blur(28px)";
 iframe.style.height = fullPanel;
 iframe.style.width =
@@ -39,14 +47,14 @@ iframe.style.top = "8px";
 iframe.style.right = `-${panelWidth}`;
 iframe.style.zIndex = "9000000000000000000";
 iframe.style.border = "none";
-iframe.style.borderRadius = "8px";
+iframe.style.borderRadius = "12px";
 iframe.style.transition =
   "visibility 0.15s, right 0.15s, width 0.15s, opacity 0.15s ease-in-out";
 iframe.setAttribute("id", "panXPanel");
 iframe.setAttribute("allow", "clipboard-write"); // enable async clipboard API, specifically, to write on clipboard, for copy to clipboard features
 iframe.style.boxShadow =
   "rgba(0, 0, 0, 0.22) 0px 25px 57px 0px, rgba(0, 0, 0, 0.18) 0px 4px 14px 0px";
-iframe.src = chrome.runtime.getURL("panelContent.html");
+iframe.src = chrome.runtime.getURL("../templates/panelContent.html");
 document.body.appendChild(iframe);
 function toggle() {
   if (panelVisibility == "hidden") {
