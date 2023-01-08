@@ -6,7 +6,7 @@ Powerful extension to show all anchor links and emails on the page.
 
 ## Setup
 
-- Clone the repo or [download](https://github.com/irizwankhan/LinkX/archive/refs/heads/master.zip) the .zip and extract it.
+- Clone the repo or [download](https://github.com/rizz-wan/LinkX/archive/refs/heads/master.zip) the .zip and extract it.
 
 - Navigate to `chrome://extensions` in Google Chrome.
 
@@ -32,9 +32,9 @@ Powerful extension to show all anchor links and emails on the page.
 
 ## Feedback & Contribution
 
-- If you find any bugs or issues please report them on the [Issue Tracker](https://github.com/irizwankhan/LinkX/issues).
+- If you find any bugs or issues please report them on the [Issue Tracker](https://github.com/rizz-wan/LinkX/issues).
 
-> If you would like to contribute to this project please consider [forking this repo](https://github.com/irizwankhan/LinkX/fork), making your changes and then creating a new [Pull Request](https://github.com/irizwankhan/LinkX/pulls) back to the main code repository.
+> If you would like to contribute to this project please consider [forking this repo](https://github.com/rizz-wan/LinkX/fork), making your changes and then creating a new [Pull Request](https://github.com/rizz-wan/LinkX/pulls) back to the main code repository.
 
 ## License
 
